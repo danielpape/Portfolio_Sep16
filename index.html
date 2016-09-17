@@ -31,23 +31,27 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <style>
-    body {
-      padding-top:50px;
-      padding-bottom:50px;
+    @import 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700';
+    body{
+      font-family: 'Roboto', sans-serif;
     }
     .topborder{
-      border-color: #000;
+      border-color: #212121;
       border-style: solid;
       border-width: 4px 0 0;
     }
     .topBottomMargins{
-      margin-top:8em;
-      margin-bottom:8em;
+      padding-top:6em;
+      padding-bottom:6em;
         }
     .colourBack{
-      padding-top:8em;
-      padding-bottom:8em;
-      background-color: #e3e3e3;
+      padding-top:6em;
+      padding-bottom:6em;
+      background-color: #00897B;
+      color: #B2DFDB;
+    }
+    .colourBack h1 {
+      color: #fff;
     }
     .logo{
       margin-bottom:20px;
@@ -59,13 +63,57 @@
     }
     .jumbotron{
       margin-bottom: 0px;
+      background-color: #00897B;
+      color: #B2DFDB;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .jumbotron strong{
+      color: #fff;
+    }
+    .footer{
+      color: #F5F5F5;
+      background-color: #212121;
+    }
+    .footer a {
+      color: #E0E0E0;
+    }
+    .footer a i {
+      color: #757575;
+    }
+    .formStyle{
+      color:#fff;
+      width:100%;
+      border-color:#fff;
+      border-width:2px;
+      height:40px;
+      border-radius:4px;
+      background-color:#00897B;
+      -webkit-box-shadow: none;
+    	-moz-box-shadow: none;
+    	box-shadow: none;
+      outline: none;
+    }
+    ::-webkit-input-placeholder {
+      color: #B2DFDB;
+    }
+
+    :-moz-placeholder {
+       color: #B2DFDB;
+    }
+
+    ::-moz-placeholder {
+       color: #B2DFDB;
+    }
+
+    :-ms-input-placeholder {
+       color: #B2DFDB;
     }
   </style>
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+    <!-- <nav class="navbar" style="background: rgba(0,0,0,0.4);">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -73,14 +121,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Daniel Pape</a>
         </div>
-      </div>
-    </nav>
+        <div>
+          <ul class="nav navbar-nav navbar-right" style="background: rgba(0,0,0,0.0);">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    </nav> -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container topBottomMargins">
+        <!-- <p><a href="#">Work></a> <a href="#">Work></a></p> -->
         <div class="logo"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
          width="10em" height="10em" viewBox="0 0 414.000000 446.000000"
          preserveAspectRatio="xMidYMid meet">
@@ -88,7 +141,7 @@
         Created by potrace 1.13, written by Peter Selinger 2001-2015
         </metadata>
         <g transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)"
-        fill="#000000" stroke="none">
+        fill="#212121" stroke="none">
         <path d="M627 4398 c-93 -89 -529 -512 -572 -555 -24 -23 -41 -44 -38 -47 2
         -2 4 -855 4 -1894 l0 -1890 1032 2 c568 1 1047 5 1065 8 18 4 52 10 75 13 385
         53 758 188 1051 383 363 240 610 562 755 985 22 64 38 117 36 117 -2 0 2 18
@@ -126,12 +179,12 @@
         </div>
       </div>
     </div>
-    <section class="colourBack">
+    <section class="topBottomMargins" style="background-color:#E0F2F1">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-          <div class="topborder">
+          <div class="topborder" style="margin-bottom:3em;">
           <h1><strong>What I do</strong></h1>
           <p>Put simply, I am a digital designer with development skills. I have designed and coded multiple apps on the iOS app store, and many have been featured in Apple's human curated 'New &amp; Noteworthy' section.</p>
         </div>
@@ -306,15 +359,15 @@
 <p>Feel free to get in touch if you'd like to talk about how we can work together to make your project awesome.</p>
 
 
-<div class="form-group" style="margin-bottom:0px;margin-top:20px;">
+<div class="form-group" style="margin-bottom:0px;margin-top:3em;">
   <div class="col-md-6 inputGroupContainer" style="margin-bottom:15px;">
   <div class="input-group" style="width:100%;">
-  <input name="name" placeholder="Name" class="form-control" style="width:100%;border-color:#333;border-width:2px;height:40px;border-radius:4px;" type="text">
+  <input name="name" placeholder="Name" class="form-control formStyle" type="text">
     </div>
   </div>
     <div class="col-md-6 inputGroupContainer" style="margin-bottom:15px;">
     <div class="input-group" style="width:100%;">
-  <input name="email" placeholder="E-Mail" class="form-control" style="width:100%;border-color:#333;border-width:2px;height:40px;border-radius:4px;"  type="text">
+  <input name="email" placeholder="E-Mail" class="form-control formStyle" type="text">
     </div>
   </div>
 </div>
@@ -325,13 +378,13 @@
 <div class="form-group" style="margin-bottom:0px;">
     <div class="col-md-6 inputGroupContainer" style="margin-bottom:15px;">
     <div class="input-group" style="width:100%;">
-  <input name="productname" placeholder="Business/Product Name" style="width:100%;border-color:#333;border-width:2px;height:40px;border-radius:4px;" class="form-control" type="text">
+  <input name="productname" placeholder="Business/Product Name" class="form-control formStyle" type="text">
     </div>
   </div>
 
     <div class="col-md-6 inputGroupContainer" style="margin-bottom:15px;">
     <div class="input-group" style="width:100%;">
-  <input name="productwebsite" placeholder="Business/Product Website" style="width:100%;border-color:#333;border-width:2px;height:40px;border-radius:4px;" class="form-control"type="text">
+  <input name="productwebsite" placeholder="Business/Product Website" class="form-control formStyle" type="text">
     </div>
   </div>
 </div>
@@ -340,7 +393,7 @@
 <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
 
 <!-- Button -->
-<div class="form-group">
+<div class="form-group" style="margin-bottom:0px;">
   <label class="col-md-8 control-label"></label>
   <div class="col-md-8">
     <button type="submit" class="btn btn-default" >Send </span></button>
@@ -351,11 +404,24 @@
 </form>
 </div>
 </section>
-    <div class="container"><!-- /.container -->
-      <footer>
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
+<section class="footer" style="padding-top:2em;padding-bottom:2em;margin-bottom:0;">
+  <div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-12">
+    <div class="col-md-6">
+      <p>&copy; Daniel Pape 2016</p>
+      <p><a href="https://www.twitter.com/danielpape">Twitter</a></p>
+      <p><a href="https://www.github.com/danielpape">GitHub</a></p>
+    </div>
+    <div class="col-md-6">
+      <p><a href="#">Eve Alarm <i>App Store</i></a></p>
+      <p><a href="#">Evening Standard: Progress 1000 <i>App Store</i></a></p>
+      <p><a href="#">Mapgrounds <i>App Store</i></a></p>
+   </div>
+      </div>
+    </div>
+</section> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript

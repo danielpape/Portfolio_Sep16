@@ -68,6 +68,28 @@
     .jumbotron strong{
       color: #fff;
     }
+    .jumbotron h1 {
+      font-size: 2em;
+    }
+    .jumbotron h3 {
+      font-size: 2em;
+    }
+    .jumbotron h2 {
+      font-size: 1.5em;
+      color: #fff;
+      line-height: 130%;
+    }
+    .jumbotron p {
+      font-size: 1em;
+      margin-bottom: 0.2em;
+      color: #fff;
+    }
+    .jumbotron a {
+      color: #B2DFDB;
+    }
+    .jumbotron h3 {
+     color: #ffffff;
+    }
     .footer{
       color: #F5F5F5;
       background-color: #212121;
@@ -186,21 +208,33 @@
         </g>
         </svg>
         </div>
-        <div class="topborder">
-        <h1><strong>Daniel Pape</strong> is a designer and front end developer based in London, England</h1>
+        <div class="col-md-12 topborder">
+        </div>
+        <div class="col-md-4">
+        <h1>Hi, I'm <strong>Daniel Pape</strong>.</h1>
+        <h2>I'm a product designer and front end developer who releases apps on the App Store. I'm based in London, England</h2>
         <!-- <p>I design graphics and user interfaces and then turn them into code. Based in London, England.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">View Work</a></p> -->
         </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-7">
+        <h3>Quick Links</h3>
+        <p style="margin-top:20px;"><strong>Apps</strong> <a href="https://itunes.apple.com/gb/app/eve-alarm-time-to-sleep/id633081958?mt=8#">Eve Alarm</a> &#149; <a href="https://itunes.apple.com/gb/app/mapgrounds/id792151906?mt=8">Mapgrounds</a> &#149; <a href="https://itunes.apple.com/us/app/progress-1000-by-london-evening/id931391607?mt=8">Progress 1000</a> &#149; <a href="https://itunes.apple.com/gb/app/copywriter/id670760844?mt=8">CopyWriter</a></p>
+        <p><strong>About</strong> <a href="#whatIdo">What I do</a> &#149; <a href="#work">My Work</a></p>
+        <p><strong>Contact</strong> <a href="#contact">Email</a> &#149; <a href="https://twitter.com/danielpape" target="_blank">Twitter</a> &#149; <a href="https://github.com/danielpape" target="_blank">GitHub</a></p>
+
+        </div>
       </div>
     </div>
-    <section class="topBottomMargins" style="background-color:#E0F2F1">
+    <section class="topBottomMargins" style="background-color:#E0F2F1" id="whatIdo">
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
           <div class="topborder" style="margin-bottom:3em;">
           <h1><strong>What I do</strong></h1>
-          <p>Put simply, I am a digital designer with development skills. I have designed and coded multiple apps on the iOS app store, and many have been featured in Apple's human curated 'New &amp; Noteworthy' section.</p>
+          <p>I am a digital designer with development skills. I have designed and coded user interfaces and graphics for multiple apps on the iOS app store, many of which have been featured in Apple's human curated 'New &amp; Noteworthy' section.</p>
         </div>
         <div class="col-md-4">
           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -228,7 +262,7 @@
         </div>
       </div>
     </section>
-    <section class="topBottomMargins">
+    <section class="topBottomMargins" id="work">
       <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -269,7 +303,7 @@
         </div>
       </div>
     </section>
-  <section class="colourBack">
+  <section class="colourBack" id="contact">
 <div class="container">
 
     <form class="form-horizontal" action="mail.php" method="post"  id="contact_form">

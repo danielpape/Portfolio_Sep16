@@ -221,7 +221,7 @@
         <div class="col-md-7">
         <!-- <h3>Quick Links</h3> -->
         <p style="margin-top:20px;"><strong>Apps</strong> <a href="https://itunes.apple.com/gb/app/eve-alarm-time-to-sleep/id633081958?mt=8#">Eve Alarm</a> &#149; <a href="https://itunes.apple.com/gb/app/mapgrounds/id792151906?mt=8">Mapgrounds</a> &#149; <a href="https://itunes.apple.com/us/app/progress-1000-by-london-evening/id931391607?mt=8">Progress 1000</a> &#149; <a href="https://itunes.apple.com/gb/app/copywriter/id670760844?mt=8">CopyWriter</a></p>
-        <p><strong>About</strong> <a href="#work">My Work</a> &#149; <a href="#whatIdo">What I do</a></p>
+        <p><strong>About</strong> <a onclick="scrollToSection('#work')">My Work</a> &#149; <a onclick="scrollToSection('#whatIdo')">What I do</a></p>
         <p><strong>Contact</strong> <a href="#contact">Email</a> &#149; <a href="https://twitter.com/danielpape" target="_blank">Twitter</a> &#149; <a href="https://github.com/danielpape" target="_blank">GitHub</a></p>
 
         </div>
@@ -242,7 +242,7 @@
         <div class="col-md-6">
           <h2>Eve Alarm</h2>
           <p>Eve Alarm is an alarm app that uses a custom clickwheel control to interact with the sunset-based user-interface. It was featured in the US &amp; UK app stores for over 6 months.</p>
-          <p><a class="btn btn-default" href="#" role="button">Download</a></p>
+          <p><a class="btn btn-default" href="https://itunes.apple.com/gb/app/eve-alarm-time-to-sleep/id633081958?mt=8" role="button">Download</a></p>
        </div>
           </div>
         </div>
@@ -252,13 +252,13 @@
           <img src="img/progress1000.png" style="width:100%">
           <h2>Evening Standard</h2>
           <p>The Progress 1000 by London Evening Standard is an annual event featuring the 1000 most influential people in London. I created a platform for the app from scratch which is responsive to all sizes of iPhone &amp; iPad, and automatically lays out section pages and paginated profile pages with offline image caching.</p>
-          <p><a class="btn btn-default" href="#" role="button">Download</a></p>
+          <p><a class="btn btn-default" href="https://itunes.apple.com/us/app/progress-1000-by-london-evening/id931391607?mt=8" role="button">Download</a></p>
         </div>
         <div class="col-md-4" style="padding-bottom:2em;">
           <img src="img/mapgrounds.png" style="width:100%">
           <h2>Mapgrounds</h2>
           <p>Mapgrounds is an app that created beautiful wallpapers for your iPhone, with social sharing and in-app purchases to add new styles.</p>
-          <p><a class="btn btn-default" href="#" role="button">Download</a></p>
+          <p><a class="btn btn-default" href="https://itunes.apple.com/gb/app/mapgrounds/id792151906?mt=8" role="button">Download</a></p>
        </div>
         <div class="col-md-4" style="padding-bottom:2em;">
           <img src="img/stoic.png" style="width:100%">
@@ -375,6 +375,8 @@
       <p><a href="https://itunes.apple.com/gb/app/mapgrounds/id792151906?mt=8">Mapgrounds <i>App Store</i></a></p>
    </div>
       </div>
+
+    </div>
     </div>
 </section> <!-- /container -->
 
@@ -387,5 +389,12 @@
     <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      function scrollToSection (nameOfSection) {
+             $('html, body').animate({
+               'scrollTop':   $(nameOfSection).offset().top
+             }, 1000);
+        };(jQuery);
+    </script>
   </body>
 </html>

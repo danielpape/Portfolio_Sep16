@@ -1,0 +1,16 @@
+-- HUMANS --
+
+Daniel Pape
+danielpape.co.uk
+Twitter:@danielpape
+
+-- SITE --
+
+Last update: 23/10/2016 - Complete redesign and new pages
+Stack: Bootstrap, jQuery, Formspree
+Software: Atom, Sketch
+Hardware: Apple MacBook Pro Retina 13", Toshiba Chromebook 2 & Apple MacBook Pro 15"
+
+-- FONTS --
+
+Headers & Body : Roboto

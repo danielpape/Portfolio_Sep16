@@ -312,7 +312,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<div class="topborder">
+<div id="contactForm" class="topborder">
 <h1><strong>Contact</strong></h1>
 <p>Feel free to get in touch if you'd like to talk about how we can work together to make your project awesome.</p>
 
@@ -346,8 +346,6 @@
     </div>
   </div>
 </div>
-<!-- Success message -->
-<div id="form-messages"></div>
 
 <!-- Button -->
 <div class="form-group" style="margin-bottom:0px;">
@@ -359,7 +357,12 @@
   </div>
 </fieldset>
 </form>
+<div id="success_message" class="topborder">
+<h1><strong>Speak soon!</strong></h1>
+<p>Thanks for getting in touch, I'll be in contact soon to talk about how I can help your project.</p>
 </div>
+</div>
+<!-- Success message -->
 </section>
 <section class="footer" style="padding-top:2em;padding-bottom:2em;margin-bottom:0;">
   <div class="container">
@@ -422,11 +425,13 @@ $.ajax({
 })
 .done(function(response) {
     // Make sure that the formMessages div has the 'success' class.
-    $(formMessages).removeClass('error');
-    $(formMessages).addClass('success');
+    // $(formMessages).removeClass('error');
+    // $(formMessages).addClass('success');
+    $(success_message).css('display', 'block');
+    $(contactForm).css('display', 'none');
 
     // Set the message text.
-    $(formMessages).text('Thanks for sending a message');
+    // $(formMessages).text('Thanks for sending a message');
 
     // Clear the form.
     $('#name').val('');

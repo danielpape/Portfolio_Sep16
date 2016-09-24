@@ -308,7 +308,7 @@
   <section class="colourBack" id="contact">
 <div class="container">
 
-    <form class="form-horizontal" action="mailer.php" method="POST"  id="ajax-content">
+    <form class="form-horizontal" action="https://formspree.io/danielwpape@gmail.com" method="POST"  id="ajax-content">
 <fieldset>
 
 <!-- Form Name -->
@@ -353,7 +353,7 @@
 <div class="form-group" style="margin-bottom:0px;">
   <label class="col-sm-8 control-label"></label>
   <div class="col-sm-8">
-    <button type="submit" class="btn btn-default btnBottom" onclick="showMessage()">Send</button>
+    <button type="submit" class="btn btn-default btnBottom" >Send</button>
   </div>
 </div>
   </div>
@@ -415,9 +415,10 @@ var formData = $(form).serialize();
 // Submit the form using AJAX.
 $.ajax({
     type: 'POST',
-    url: $(form).attr('action'),
+    url: "https://formspree.io/danielwpape@gmail.com",
+    // url: $(form).attr('action'),
     data: formData,
-    datatype: "jsonp"
+    dataType: "json"
 })
 .done(function(response) {
     // Make sure that the formMessages div has the 'success' class.
@@ -425,7 +426,7 @@ $.ajax({
     $(formMessages).addClass('success');
 
     // Set the message text.
-    $(formMessages).text(response);
+    $(formMessages).text('Thanks for sending a message');
 
     // Clear the form.
     $('#name').val('');

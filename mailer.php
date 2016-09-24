@@ -7,7 +7,7 @@
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $productname = trim($_POST["productname"]);
-        $productwebsite = trim($_POST["productwebsite"]);
+        // $productwebsite = trim($_POST["productwebsite"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -27,7 +27,7 @@
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Product:\n$productname\n";
-        $email_content .= "Website:\n$productwebsite\n";
+        // $email_content .= "Website:\n$productwebsite\n";
 
         // Build the email headers.
         $email_headers = "From: $name <$email>";
